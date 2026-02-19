@@ -408,6 +408,30 @@ footer {
   min-height: 120px;
 }
 
+.form-status {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  display: none;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.form-status.success {
+  display: block;
+  background-color: rgba(16, 185, 129, 0.1);
+  color: #059669;
+  border: 1px solid rgba(16, 185, 129, 0.2);
+}
+
+.form-status.error {
+  display: block;
+  background-color: rgba(239, 68, 68, 0.1);
+  color: #dc2626;
+  border: 1px solid rgba(239, 68, 68, 0.2);
+}
+
 @media (max-width: 768px) {
   .hero h1 {
     font-size: 2.5rem;

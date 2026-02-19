@@ -96,3 +96,45 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     }
   });
 });
+
+// Contact Form AJAX Submission
+const contactForm = document.getElementById('contact-form') as HTMLFormElement;
+const formStatus = document.getElementById('form-status');
+
+contactForm?.addEventListener('submit', async (e) => {
+  e.preventDefault();
+
+  if (!formStatus) return;
+
+  const data = new FormData(contactForm);
+  const submitBtn = contactForm.querySelector('button[type="submit"]') as HTMLButtonElement;
+
+  try {
+    submitBtn.disabled = true;
+    formStatus.textContent = currentLang === 'en' ? 'Sending...' : 'Gönderiliyor...';
+    formStatus.className = 'form-status';
+
+    const response = await fetch(contactForm.action, {
+      method: contactForm.method,
+      body: data,
+      headers: {
+        'Accept': 'application/json'
+      }
+    });
+
+    if (response.ok) {
+      formStatus.textContent = translations[currentLang as keyof typeof translations].formSuccess;
+      formStatus.className = 'form-status success';
+      contactForm.reset();
+    } else {
+      const errorData = await response.json();
+      formStatus.textContent = errorData.errors?.[0]?.message || (currentLang === 'en' ? 'Oops! Something went wrong.' : 'Hay aksi! Bir şeyler yanlış gitti.');
+      formStatus.className = 'form-status error';
+    }
+  } catch (error) {
+    formStatus.textContent = currentLang === 'en' ? 'Oops! There was a problem submitting your form.' : 'Hay aksi! Form gönderilirken bir sorun oluştu.';
+    formStatus.className = 'form-status error';
+  } finally {
+    submitBtn.disabled = false;
+  }
+});
