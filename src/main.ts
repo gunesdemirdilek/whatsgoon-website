@@ -1,4 +1,5 @@
 import './style.css'
+import { translations } from './translations'
 
 // Theme Toggle Logic
 const themeToggle = document.querySelector('#theme-toggle');
@@ -29,6 +30,48 @@ function updateThemeIcon(theme: string) {
     }
   }
 }
+
+// Language Logic
+const langToggle = document.querySelector('#lang-toggle');
+let currentLang = localStorage.getItem('lang') || 'en';
+
+function updateLanguage(lang: string) {
+  currentLang = lang;
+  localStorage.setItem('lang', lang);
+
+  if (langToggle) {
+    langToggle.textContent = lang === 'en' ? 'TR' : 'EN';
+  }
+
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.getAttribute('data-i18n');
+    if (key && translations[lang as keyof typeof translations][key as keyof typeof translations['en']]) {
+      const translation = translations[lang as keyof typeof translations][key as keyof typeof translations['en']];
+      if (el.tagName === 'TITLE') {
+        document.title = translation;
+      } else if (el.tagName === 'META' && el.getAttribute('name') === 'description') {
+        el.setAttribute('content', translation);
+      } else {
+        el.innerHTML = translation;
+      }
+    }
+  });
+
+  // Re-run Lucide to ensure icons in translated strings are rendered (if any)
+  // @ts-ignore
+  if (window.lucide) {
+    // @ts-ignore
+    window.lucide.createIcons();
+  }
+}
+
+langToggle?.addEventListener('click', () => {
+  const nextLang = currentLang === 'en' ? 'tr' : 'en';
+  updateLanguage(nextLang);
+});
+
+// Initialize language on load
+updateLanguage(currentLang);
 
 // Scroll Blur Header
 const header = document.querySelector('header');

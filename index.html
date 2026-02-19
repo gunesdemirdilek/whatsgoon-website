@@ -5,8 +5,8 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>whatsgoon - Master Your Money, Effortlessly</title>
-  <meta name="description"
+  <title data-i18n="title">whatsgoon - Master Your Money, Effortlessly</title>
+  <meta name="description" data-i18n="description"
     content="Manage your personal finances, track debts in gold, and monitor recurring expenses with whatsgoon Mobile." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,12 +22,13 @@
           <i data-lucide="wallet"></i> whatsgoon
         </a>
         <ul class="nav-links">
-          <li><a href="#features">Features</a></li>
-          <li><a href="#support">Support</a></li>
+          <li><a href="#features" data-i18n="features">Features</a></li>
+          <li><a href="#support" data-i18n="support">Support</a></li>
           <li><button id="theme-toggle"><i data-lucide="sun" id="theme-icon"></i></button></li>
-          <li><a href="https://web.whatsgoon.app/" class="btn btn-secondary">Web Version</a></li>
+          <li><button id="lang-toggle" class="lang-btn">TR</button></li>
+          <li><a href="https://web.whatsgoon.app/" class="btn btn-secondary" data-i18n="webVersion">Web Version</a></li>
           <li><a href="https://play.google.com/store/apps/details?id=com.gdemirdilek.whatsgoonmobile"
-              class="btn btn-primary">Download Now</a></li>
+              class="btn btn-primary" data-i18n="downloadNow">Download Now</a></li>
         </ul>
       </nav>
     </div>
@@ -36,16 +37,17 @@
   <main>
     <section class="hero">
       <div class="container">
-        <h1>Master Your Money,<br />Effortlessly.</h1>
-        <p>Track expenses, manage debts in gold, and keep your financial health in check with the most comprehensive
+        <h1 data-i18n="heroTitle">Master Your Money,<br />Effortlessly.</h1>
+        <p data-i18n="heroSubtitle">Track expenses, manage debts in gold, and keep your financial health in check with
+          the most comprehensive
           finance manager.</p>
         <div class="hero-actions" style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
           <a href="https://play.google.com/store/apps/details?id=com.gdemirdilek.whatsgoonmobile"
             class="btn btn-primary btn-lg">
-            <i data-lucide="download"></i> Get it on Play Store
+            <i data-lucide="download"></i> <span data-i18n="getOnPlayStore">Get it on Play Store</span>
           </a>
           <a href="https://web.whatsgoon.app/" class="btn btn-secondary btn-lg">
-            <i data-lucide="external-link"></i> Open Web Version
+            <i data-lucide="external-link"></i> <span data-i18n="openWebVersion">Open Web Version</span>
           </a>
         </div>
         <div class="hero-mockup">
@@ -77,39 +79,45 @@
     <section id="features" class="features">
       <div class="container">
         <div class="section-header">
-          <h2>Everything you need to stay on top.</h2>
-          <p>Powerful features designed for your financial freedom.</p>
+          <h2 data-i18n="featuresTitle">Everything you need to stay on top.</h2>
+          <p data-i18n="featuresSubtitle">Powerful features designed for your financial freedom.</p>
         </div>
         <div class="feature-grid">
           <div class="feature-card">
             <div class="feature-icon"><i data-lucide="line-chart"></i></div>
-            <h3>Transaction Tracking</h3>
-            <p>Record income and expenses with detailed categorization and multi-currency support.</p>
+            <h3 data-i18n="feat1Title">Transaction Tracking</h3>
+            <p data-i18n="feat1Desc">Record income and expenses with detailed categorization and multi-currency support.
+            </p>
           </div>
           <div class="feature-card">
             <div class="feature-icon"><i data-lucide="coins"></i></div>
-            <h3>Gold Debt Management</h3>
-            <p>Track gold-based debts with real-time market prices. Never lose track of your weight-based assets.</p>
+            <h3 data-i18n="feat2Title">Gold Debt Management</h3>
+            <p data-i18n="feat2Desc">Track gold-based debts with real-time market prices. Never lose track of your
+              weight-based assets.</p>
           </div>
           <div class="feature-card">
             <div class="feature-icon"><i data-lucide="calendar"></i></div>
-            <h3>Recurring Expenses</h3>
-            <p>Manage subscriptions and installments automatically. Get notified before they hit your balance.</p>
+            <h3 data-i18n="feat3Title">Recurring Expenses</h3>
+            <p data-i18n="feat3Desc">Manage subscriptions and installments automatically. Get notified before they hit
+              your balance.</p>
           </div>
           <div class="feature-card">
             <div class="feature-icon"><i data-lucide="globe"></i></div>
-            <h3>Multi-Currency</h3>
-            <p>Handle transactions in TRY, USD, EUR, and more with integrated real-time exchange rates.</p>
+            <h3 data-i18n="feat4Title">Multi-Currency</h3>
+            <p data-i18n="feat4Desc">Handle transactions in TRY, USD, EUR, and more with integrated real-time exchange
+              rates.</p>
           </div>
           <div class="feature-card">
             <div class="feature-icon"><i data-lucide="fingerprint"></i></div>
-            <h3>Secure & Private</h3>
-            <p>Your data is protected with biometric authentication and secure cloud sync via Supabase.</p>
+            <h3 data-i18n="feat5Title">Secure & Private</h3>
+            <p data-i18n="feat5Desc">Your data is protected with biometric authentication and secure cloud sync via
+              Supabase.</p>
           </div>
           <div class="feature-card">
             <div class="feature-icon"><i data-lucide="smartphone"></i></div>
-            <h3>Cross-Platform</h3>
-            <p>Seamless experience across all your mobile devices with a beautiful, modern interface.</p>
+            <h3 data-i18n="feat6Title">Cross-Platform</h3>
+            <p data-i18n="feat6Desc">Seamless experience across all your mobile devices with a beautiful, modern
+              interface.</p>
           </div>
         </div>
       </div>
@@ -118,11 +126,26 @@
     <section id="support" class="contact">
       <div class="container">
         <div class="contact-card">
-          <h2>Need help?</h2>
-          <p>Our support team is always here for you. Reach out to us for any questions or feedback.</p>
-          <a href="mailto:support@whatsgoon.app" class="btn btn-primary" style="margin-top: 1.5rem;">
-            <i data-lucide="mail"></i> Contact Support
-          </a>
+          <h2 data-i18n="needHelp">Need help?</h2>
+          <p data-i18n="supportDesc">Our support team is always here for you. Reach out to us for any questions or
+            feedback.</p>
+          <form action="https://formspree.io/f/xqkrdgrz" method="POST" class="contact-form" id="contact-form">
+            <div class="form-group">
+              <label for="name" data-i18n="formName">Your Name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email" data-i18n="formEmail">Your Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="message" data-i18n="formMessage">Message</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">
+              <i data-lucide="send"></i> <span data-i18n="formSubmit">Send Message</span>
+            </button>
+          </form>
         </div>
       </div>
     </section>
@@ -132,10 +155,10 @@
     <div class="container">
       <span class="footer-logo">whatsgoon</span>
       <div class="footer-links">
-        <a href="#features">Features</a>
-        <a href="#support">Support</a>
-        <a href="#">Privacy Policy</a>
-        <a href="#">Terms of Service</a>
+        <a href="#features" data-i18n="features">Features</a>
+        <a href="#support" data-i18n="support">Support</a>
+        <a href="#" data-i18n="privacyPolicy">Privacy Policy</a>
+        <a href="#" data-i18n="termsOfService">Terms of Service</a>
       </div>
       <div class="app-links">
         <a href="https://play.google.com/store/apps/details?id=com.gdemirdilek.whatsgoonmobile">
@@ -143,7 +166,8 @@
             alt="Get it on Google Play" class="play-store-badge">
         </a>
       </div>
-      <p style="color: var(--text-light); margin-top: 2rem;">&copy; 2026 whatsgoon. All rights reserved.</p>
+      <p style="color: var(--text-light); margin-top: 2rem;">&copy; 2026 whatsgoon. <span
+          data-i18n="allRightsReserved">All rights reserved.</span></p>
     </div>
   </footer>
 
