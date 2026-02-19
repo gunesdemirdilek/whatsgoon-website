@@ -36,6 +36,7 @@ export const translations = {
         formSubmit: "Send Message",
         formSuccess: "Your message has been sent!",
         emailSupport: "Email Support",
+        or: "or",
     },
     tr: {
         title: "whatsgoon - Paranı Zahmetsizce Yönet",
@@ -74,5 +75,6 @@ export const translations = {
         formSubmit: "Mesaj Gönder",
         formSuccess: "Mesajınız başarıyla gönderildi!",
         emailSupport: "E-posta Destek",
+        or: "veya",
     },
 };

@@ -288,7 +288,7 @@ nav {
 }
 
 .contact-card {
-  max-width: 900px;
+  max-width: 600px;
   margin: 0 auto;
   background-color: var(--surface);
   border-radius: var(--radius);
@@ -297,18 +297,12 @@ nav {
   box-shadow: var(--shadow-lg);
 }
 
-.contact-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3rem;
-  margin-top: 3rem;
-  text-align: left;
-}
-
-.contact-info {
+.contact-wrapper {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  margin-top: 3rem;
+  align-items: center;
 }
 
 .contact-method {
@@ -320,6 +314,12 @@ nav {
   border-radius: 1rem;
   border: 1px solid var(--border);
   transition: all 0.2s ease;
+  width: 100%;
+}
+
+.contact-method.centered {
+  justify-content: center;
+  max-width: 400px;
 }
 
 .contact-method:hover {
@@ -350,6 +350,28 @@ nav {
 
 .contact-method-content a:hover {
   text-decoration: underline;
+}
+
+.contact-separator {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  color: var(--text-light);
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.contact-separator::before,
+.contact-separator::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: var(--border);
+}
+
+.contact-separator span {
+  padding: 0 1rem;
 }
 
 /* Footer */
