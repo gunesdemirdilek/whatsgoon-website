@@ -120,6 +120,18 @@ nav {
   box-shadow: var(--shadow);
 }
 
+.btn-secondary {
+  background-color: transparent;
+  color: var(--text);
+  border: 1px solid var(--border);
+}
+
+.btn-secondary:hover {
+  background-color: var(--surface);
+  border-color: var(--primary);
+  transform: translateY(-2px);
+}
+
 /* Hero Section */
 .hero {
   padding-top: 160px;
