@@ -181,15 +181,7 @@ header.scrolled {
   margin: 0 auto 2.5rem;
 }
 
-/* CSS Phone Mockup */
-.hero-mockup {
-  perspective: 1000px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 2rem;
-}
-
+/* CSS Phone Mockup (Shared) */
 .iphone {
   width: 280px;
   height: 560px;
@@ -198,13 +190,9 @@ header.scrolled {
   border: 8px solid #374151;
   position: relative;
   box-shadow: 0 50px 100px -20px rgba(0, 0, 0, 0.5);
-  transform: rotateY(-15deg) rotateX(10deg);
   transition: transform 0.5s ease;
   overflow: hidden;
-}
-
-.iphone:hover {
-  transform: rotateY(0deg) rotateX(0deg) scale(1.05);
+  flex-shrink: 0;
 }
 
 .iphone-screen {
@@ -216,6 +204,19 @@ header.scrolled {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+}
+
+.iphone-notch {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 25px;
+  background: #374151;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  z-index: 10;
 }
 
 .mockup-header {
@@ -241,17 +242,24 @@ header.scrolled {
   margin-bottom: 8px;
 }
 
-.iphone-notch {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 120px;
-  height: 25px;
-  background: #374151;
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
-  z-index: 10;
+/* Hero Slider */
+.hero-slider {
+  margin-top: 4rem;
+  perspective: 1000px;
+}
+
+.hero-slider .slider-wrapper {
+  max-width: 1100px;
+  padding: 0 50px;
+  margin: 0 auto;
+}
+
+.hero-slider .slide {
+  background: rgba(var(--surface-rgb), 0.5);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-xl);
 }
 
 /* Features Section */
