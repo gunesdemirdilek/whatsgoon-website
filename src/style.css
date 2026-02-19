@@ -288,13 +288,68 @@ nav {
 }
 
 .contact-card {
-  max-width: 600px;
+  max-width: 900px;
   margin: 0 auto;
-  text-align: center;
-  padding: 3rem;
   background-color: var(--surface);
   border-radius: var(--radius);
   border: 1px solid var(--border);
+  padding: 3rem;
+  box-shadow: var(--shadow-lg);
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  margin-top: 3rem;
+  text-align: left;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.contact-method {
+  display: flex;
+  gap: 1.25rem;
+  align-items: flex-start;
+  padding: 1.5rem;
+  background: var(--background);
+  border-radius: 1rem;
+  border: 1px solid var(--border);
+  transition: all 0.2s ease;
+}
+
+.contact-method:hover {
+  border-color: var(--primary);
+  transform: translateY(-2px);
+}
+
+.contact-method i {
+  color: var(--primary);
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+.contact-method-content h4 {
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+  color: var(--text);
+  margin-top: 0;
+}
+
+.contact-method-content a {
+  color: var(--primary);
+  word-break: break-all;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.contact-method-content a:hover {
+  text-decoration: underline;
 }
 
 /* Footer */
@@ -370,7 +425,6 @@ footer {
   flex-direction: column;
   gap: 1rem;
   text-align: left;
-  margin-top: 2rem;
 }
 
 .form-group {

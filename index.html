@@ -129,24 +129,37 @@
           <h2 data-i18n="needHelp">Need help?</h2>
           <p data-i18n="supportDesc">Our support team is always here for you. Reach out to us for any questions or
             feedback.</p>
-          <form action="https://formspree.io/f/mgolzgdz" method="POST" class="contact-form" id="contact-form">
-            <div class="form-group">
-              <label for="name" data-i18n="formName">Your Name</label>
-              <input type="text" id="name" name="name" required>
+
+          <div class="contact-grid">
+            <div class="contact-info">
+              <div class="contact-method">
+                <i data-lucide="mail"></i>
+                <div class="contact-method-content">
+                  <h4 data-i18n="emailSupport">Email Support</h4>
+                  <a href="mailto:support@whatsgoon.app">support@whatsgoon.app</a>
+                </div>
+              </div>
             </div>
-            <div class="form-group">
-              <label for="email" data-i18n="formEmail">Your Email</label>
-              <input type="email" id="email" name="email" required>
-            </div>
-            <div class="form-group">
-              <label for="message" data-i18n="formMessage">Message</label>
-              <textarea id="message" name="message" required></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">
-              <i data-lucide="send"></i> <span data-i18n="formSubmit">Send Message</span>
-            </button>
-            <div id="form-status" class="form-status"></div>
-          </form>
+
+            <form action="https://formspree.io/f/mgolzgdz" method="POST" class="contact-form" id="contact-form">
+              <div class="form-group">
+                <label for="name" data-i18n="formName">Your Name</label>
+                <input type="text" id="name" name="name" required>
+              </div>
+              <div class="form-group">
+                <label for="email" data-i18n="formEmail">Your Email</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                <label for="message" data-i18n="formMessage">Message</label>
+                <textarea id="message" name="message" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">
+                <i data-lucide="send"></i> <span data-i18n="formSubmit">Send Message</span>
+              </button>
+              <div id="form-status" class="form-status"></div>
+            </form>
+          </div>
         </div>
       </div>
     </section>
