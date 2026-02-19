@@ -17,15 +17,19 @@
 <body>
   <header>
     <div class="container">
-      <nav>
+      <div class="header-top">
         <a href="/" class="logo">
           <i data-lucide="wallet"></i> whatsgoon
         </a>
+        <div class="header-controls">
+          <button id="theme-toggle"><i data-lucide="sun" id="theme-icon"></i></button>
+          <button id="lang-toggle" class="lang-btn">TR</button>
+        </div>
+      </div>
+      <nav class="header-nav">
         <ul class="nav-links">
           <li><a href="#features" data-i18n="features">Features</a></li>
           <li><a href="#support" data-i18n="support">Support</a></li>
-          <li><button id="theme-toggle"><i data-lucide="sun" id="theme-icon"></i></button></li>
-          <li><button id="lang-toggle" class="lang-btn">TR</button></li>
         </ul>
       </nav>
     </div>
