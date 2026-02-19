@@ -530,6 +530,151 @@ footer {
   border: 1px solid rgba(239, 68, 68, 0.2);
 }
 
+/* Showcase/Slider Section */
+.showcase {
+  padding: 100px 0;
+  background-color: var(--background);
+  overflow: hidden;
+}
+
+.slider-wrapper {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 4rem;
+}
+
+.slider-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  gap: 2rem;
+}
+
+.slide {
+  min-width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  padding: 3rem;
+  background: var(--surface);
+  border-radius: 2rem;
+  border: 1px solid var(--border);
+  box-sizing: border-box;
+}
+
+.slide-mockup {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.slide-info {
+  flex: 1;
+  text-align: left;
+}
+
+.slide-info h3 {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  color: var(--primary);
+}
+
+.slide-info p {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: var(--text-light);
+}
+
+.iphone.no-rotate {
+  transform: none !important;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+  margin: 0;
+}
+
+.lightning-btn-mockup {
+  width: 60px;
+  height: 60px;
+  background: #fbbf24;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem auto;
+  color: white;
+  box-shadow: 0 0 20px rgba(251, 191, 36, 0.4);
+}
+
+.mockup-card.reminder {
+  border-left: 4px solid #f87171;
+}
+
+.slider-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--text);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  z-index: 10;
+}
+
+.slider-nav:hover {
+  background: var(--primary);
+  color: white;
+  border-color: var(--primary);
+}
+
+.slider-nav.prev {
+  left: 0;
+}
+
+.slider-nav.next {
+  right: 0;
+}
+
+.slider-dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-top: 2rem;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--border);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.dot.active {
+  background: var(--primary);
+  transform: scale(1.2);
+}
+
+@media (max-width: 900px) {
+  .slide {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+    padding: 2rem 1.5rem;
+  }
+
+  .slide-info {
+    text-align: center;
+  }
+}
+
 @media (max-width: 768px) {
   .header-top {
     justify-content: flex-start;

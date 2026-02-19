@@ -138,3 +138,50 @@ contactForm?.addEventListener('submit', async (e) => {
     submitBtn.disabled = false;
   }
 });
+
+// Slider Logic
+const track = document.getElementById('slider-track');
+const prevBtn = document.getElementById('slider-prev');
+const nextBtn = document.getElementById('slider-next');
+const dots = document.querySelectorAll('.dot');
+const slides = document.querySelectorAll('.slide');
+
+let currentIndex = 0;
+
+function updateSlider() {
+  if (!track || slides.length === 0) return;
+
+  const gap = 32; // 2rem gap from CSS
+  const slideWidth = (slides[0] as HTMLElement).offsetWidth + gap;
+  track.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+
+  // Update dots
+  dots.forEach((dot, index) => {
+    dot.classList.toggle('active', index === currentIndex);
+  });
+}
+
+prevBtn?.addEventListener('click', () => {
+  const slidesCount = slides.length;
+  currentIndex = (currentIndex > 0) ? currentIndex - 1 : slidesCount - 1;
+  updateSlider();
+});
+
+nextBtn?.addEventListener('click', () => {
+  const slidesCount = slides.length;
+  currentIndex = (currentIndex < slidesCount - 1) ? currentIndex + 1 : 0;
+  updateSlider();
+});
+
+dots.forEach((dot, index) => {
+  dot.addEventListener('click', () => {
+    currentIndex = index;
+    updateSlider();
+  });
+});
+
+// Re-calculate on resize
+window.addEventListener('resize', updateSlider);
+
+// Initial positioning
+setTimeout(updateSlider, 100);
