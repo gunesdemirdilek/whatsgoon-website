@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>whatsgoon - Master Your Money, Effortlessly</title>
+  <meta name="description"
+    content="Manage your personal finances, track debts in gold, and monitor recurring expenses with whatsgoon Mobile." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <a href="/" class="logo">
+          <i data-lucide="wallet"></i> whatsgoon
+        </a>
+        <ul class="nav-links">
+          <li><a href="#features">Features</a></li>
+          <li><a href="#support">Support</a></li>
+          <li><button id="theme-toggle"><i data-lucide="sun" id="theme-icon"></i></button></li>
+          <li><a href="https://play.google.com/store/apps/details?id=com.gdemirdilek.whatsgoonmobile"
+              class="btn btn-primary">Download Now</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Master Your Money,<br />Effortlessly.</h1>
+        <p>Track expenses, manage debts in gold, and keep your financial health in check with the most comprehensive
+          finance manager.</p>
+        <div class="hero-actions">
+          <a href="https://play.google.com/store/apps/details?id=com.gdemirdilek.whatsgoonmobile"
+            class="btn btn-primary btn-lg">
+            <i data-lucide="download"></i> Get it on Play Store
+          </a>
+        </div>
+        <div class="hero-mockup">
+          <div class="iphone">
+            <div class="iphone-notch"></div>
+            <div class="iphone-screen">
+              <div class="mockup-header" style="margin-top: 1rem;"></div>
+              <div class="mockup-card" style="margin-top: 2rem;">
+                <div class="mockup-line" style="width: 80%;"></div>
+                <div class="mockup-line" style="width: 60%;"></div>
+                <div class="mockup-line" style="width: 40%;"></div>
+              </div>
+              <div class="mockup-card">
+                <div class="mockup-line" style="width: 70%;"></div>
+                <div class="mockup-line" style="width: 50%;"></div>
+              </div>
+              <div class="mockup-card" style="flex: 1;">
+                <div style="display: flex; gap: 0.5rem; height: 100%;">
+                  <div style="flex: 1; background: rgba(255,255,255,0.05); border-radius: 10px;"></div>
+                  <div style="flex: 1; background: rgba(255,255,255,0.05); border-radius: 10px;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="features">
+      <div class="container">
+        <div class="section-header">
+          <h2>Everything you need to stay on top.</h2>
+          <p>Powerful features designed for your financial freedom.</p>
+        </div>
+        <div class="feature-grid">
+          <div class="feature-card">
+            <div class="feature-icon"><i data-lucide="line-chart"></i></div>
+            <h3>Transaction Tracking</h3>
+            <p>Record income and expenses with detailed categorization and multi-currency support.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon"><i data-lucide="coins"></i></div>
+            <h3>Gold Debt Management</h3>
+            <p>Track gold-based debts with real-time market prices. Never lose track of your weight-based assets.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon"><i data-lucide="calendar"></i></div>
+            <h3>Recurring Expenses</h3>
+            <p>Manage subscriptions and installments automatically. Get notified before they hit your balance.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon"><i data-lucide="globe"></i></div>
+            <h3>Multi-Currency</h3>
+            <p>Handle transactions in TRY, USD, EUR, and more with integrated real-time exchange rates.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon"><i data-lucide="fingerprint"></i></div>
+            <h3>Secure & Private</h3>
+            <p>Your data is protected with biometric authentication and secure cloud sync via Supabase.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon"><i data-lucide="smartphone"></i></div>
+            <h3>Cross-Platform</h3>
+            <p>Seamless experience across all your mobile devices with a beautiful, modern interface.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="support" class="contact">
+      <div class="container">
+        <div class="contact-card">
+          <h2>Need help?</h2>
+          <p>Our support team is always here for you. Reach out to us for any questions or feedback.</p>
+          <a href="mailto:demirbilek@gmail.com" class="btn btn-primary" style="margin-top: 1.5rem;">
+            <i data-lucide="mail"></i> Contact Support
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <span class="footer-logo">whatsgoon</span>
+      <div class="footer-links">
+        <a href="#features">Features</a>
+        <a href="#support">Support</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+      <div class="app-links">
+        <a href="https://play.google.com/store/apps/details?id=com.gdemirdilek.whatsgoonmobile">
+          <img src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png"
+            alt="Get it on Google Play" class="play-store-badge">
+        </a>
+      </div>
+      <p style="color: var(--text-light); margin-top: 2rem;">&copy; 2026 whatsgoon. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/main.ts"></script>
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+
+</html>
