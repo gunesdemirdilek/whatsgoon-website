@@ -192,8 +192,8 @@ header.scrolled {
 
 /* Hero Section */
 .hero {
-  padding-top: 360px;
-  padding-bottom: 80px;
+  padding-top: 240px;
+  padding-bottom: 60px;
   text-align: center;
   background: none;
 }
@@ -220,15 +220,15 @@ header.scrolled {
 
 /* CSS Phone Mockup (Shared) */
 .iphone {
-  width: 280px;
-  height: 560px;
+  width: 220px;
+  height: 440px;
   background: #111827;
-  border-radius: 40px;
-  border: 8px solid #374151;
+  border-radius: 32px;
+  border: 6px solid #374151;
   position: relative;
-  box-shadow: 0 50px 100px -20px rgba(0, 0, 0, 0.5);
-  transform: rotateY(-15deg) rotateX(10deg);
-  transition: transform 0.5s ease;
+  box-shadow: 0 30px 60px -12px rgba(0, 0, 0, 0.4);
+  transform: rotateY(-5deg) rotateX(5deg);
+  transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
   overflow: hidden;
   flex-shrink: 0;
 }
@@ -529,10 +529,10 @@ footer {
   min-width: 100%;
   display: flex;
   align-items: center;
-  gap: 4rem;
-  padding: 3rem;
+  gap: 2rem;
+  padding: 2.5rem;
   background: var(--surface);
-  border-radius: 2rem;
+  border-radius: 1.5rem;
   border: 1px solid var(--border);
   box-sizing: border-box;
 }
@@ -550,9 +550,9 @@ footer {
 
 .slide-info h3 {
   font-family: var(--font-brand);
-  font-size: 4.5rem;
+  font-size: 3rem;
   font-weight: 700;
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
   color: var(--primary);
   letter-spacing: -0.02em;
 }
