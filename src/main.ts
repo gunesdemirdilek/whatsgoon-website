@@ -57,6 +57,19 @@ function updateLanguage(lang: string) {
     }
   });
 
+  // Update specific link hrefs based on language
+  const termsLink = document.querySelector('a[data-i18n="termsOfService"]');
+  if (termsLink) {
+    termsLink.setAttribute('href', lang === 'tr' ? '/tr_terms.html' : '/src/tr_terms.html');
+  }
+
+  const privacyLink = document.querySelector('a[data-i18n="privacyPolicy"]') as HTMLAnchorElement | null;
+  if (privacyLink) {
+    // Assuming you might have a tr_privacy.html or similar, we set up the structure.
+    // If a Turkish privacy policy is added later, update this ternary.
+    privacyLink.href = lang === 'tr' ? '/privacy.html' : '/privacy.html';
+  }
+
   // Re-run Lucide to ensure icons in translated strings are rendered (if any)
   // @ts-ignore
   if (window.lucide) {
