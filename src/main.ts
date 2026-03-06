@@ -70,6 +70,12 @@ function updateLanguage(lang: string) {
     privacyLink.href = lang === 'tr' ? '/privacy.html' : '/privacy.html';
   }
 
+  // Show KVKK link only in Turkish
+  const kvkkLink = document.querySelector('#kvkk-link') as HTMLAnchorElement | null;
+  if (kvkkLink) {
+    kvkkLink.style.display = lang === 'tr' ? 'inline' : 'none';
+  }
+
   // Re-run Lucide to ensure icons in translated strings are rendered (if any)
   // @ts-ignore
   if (window.lucide) {

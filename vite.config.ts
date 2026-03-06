@@ -9,6 +9,7 @@ export default defineConfig({
                 privacy: resolve(__dirname, 'privacy.html'),
                 terms: resolve(__dirname, 'terms.html'),
                 tr_terms: resolve(__dirname, 'tr_terms.html'),
+                aydinlatmametni: resolve(__dirname, 'aydinlatmametni.html'),
             },
         },
     },
