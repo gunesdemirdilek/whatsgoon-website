@@ -60,7 +60,7 @@ function updateLanguage(lang: string) {
   // Update specific link hrefs based on language
   const termsLink = document.querySelector('a[data-i18n="termsOfService"]');
   if (termsLink) {
-    termsLink.setAttribute('href', lang === 'tr' ? '/tr_terms.html' : '/src/tr_terms.html');
+    termsLink.setAttribute('href', lang === 'tr' ? '/tr_terms.html' : '/terms.html');
   }
 
   const privacyLink = document.querySelector('a[data-i18n="privacyPolicy"]') as HTMLAnchorElement | null;
