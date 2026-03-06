@@ -65,9 +65,8 @@ function updateLanguage(lang: string) {
 
   const privacyLink = document.querySelector('a[data-i18n="privacyPolicy"]') as HTMLAnchorElement | null;
   if (privacyLink) {
-    // Assuming you might have a tr_privacy.html or similar, we set up the structure.
-    // If a Turkish privacy policy is added later, update this ternary.
-    privacyLink.href = lang === 'tr' ? '/privacy.html' : '/privacy.html';
+    privacyLink.href = '/privacy.html';
+    privacyLink.style.display = lang === 'tr' ? 'none' : 'inline';
   }
 
   // Show KVKK link only in Turkish
