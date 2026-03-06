@@ -4,176 +4,259 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Terms of Service - whatsgoon</title>
+    <title>Terms of Service | whatsgoon</title>
     <style>
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
         body {
-            font-family: -apple-system, system-ui, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            max-width: 800px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', sans-serif;
+            background: #f4f6fb;
+            color: #374151;
+            line-height: 1.75;
+            padding: 40px 20px 80px;
+        }
+
+        .page-wrapper {
+            max-width: 860px;
             margin: 0 auto;
-            padding: 40px 20px;
-            background: #fefefe;
+            background: #ffffff;
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
         }
 
-        .card {
-            background: #fff;
-            padding: 30px;
-            border-radius: 8px;
-            border: 1px solid #eee;
+        .page-header {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%);
+            padding: 48px 52px 40px;
+            color: #fff;
         }
 
-        h1 {
-            font-size: 1.8rem;
-            color: #000;
-            border-bottom: 2px solid #007AFF;
-            padding-bottom: 10px;
-        }
-
-        h2 {
-            font-size: 1.1rem;
-            color: #444;
-            margin-top: 25px;
+        .page-header .brand {
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 2px;
             text-transform: uppercase;
+            color: rgba(255, 255, 255, 0.55);
+            margin-bottom: 12px;
         }
 
-        p,
-        li {
-            font-size: 0.95rem;
-            color: #555;
+        .page-header h1 {
+            font-size: clamp(20px, 4vw, 30px);
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            margin-bottom: 8px;
         }
 
-        ul {
-            padding-left: 20px;
+        .page-header .meta {
+            font-size: 13px;
+            color: rgba(255, 255, 255, 0.5);
         }
 
-        .footer {
-            margin-top: 40px;
+        .page-content {
+            padding: 48px 52px;
+        }
+
+        .page-content h2 {
+            color: #111827;
+            margin-top: 36px;
+            margin-bottom: 10px;
+            font-weight: 600;
+            font-size: 17px;
+            border-bottom: 1px solid #e5e7eb;
+            padding-bottom: 8px;
+            line-height: 1.3;
+        }
+
+        .page-content p {
+            margin: 10px 0;
+            font-size: 14.5px;
+            color: #4b5563;
+        }
+
+        .page-content ul {
+            padding-left: 0;
+            margin: 10px 0;
+            list-style: none;
+        }
+
+        .page-content li {
+            font-size: 14.5px;
+            color: #4b5563;
+            margin: 8px 0;
+            padding-left: 16px;
+            border-left: 3px solid #e5e7eb;
+        }
+
+        .page-content li strong {
+            color: #111827;
+        }
+
+        .page-content a {
+            color: #4f46e5;
+            text-decoration: none;
+        }
+
+        .page-content a:hover {
+            text-decoration: underline;
+        }
+
+        .page-footer {
+            border-top: 1px solid #f0f0f5;
+            padding: 24px 52px;
+            font-size: 12px;
+            color: #9ca3af;
             text-align: center;
-            font-size: 0.8rem;
-            color: #aaa;
+        }
+
+        .page-footer a {
+            color: #9ca3af;
+        }
+
+        @media (max-width: 600px) {
+
+            .page-header,
+            .page-content,
+            .page-footer {
+                padding-left: 24px;
+                padding-right: 24px;
+            }
         }
     </style>
-    <!DOCTYPE html>
-    <html lang="en">
-
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Terms of Service - whatsgoon</title>
-        <style>
-            body {
-                font-family: -apple-system, system-ui, sans-serif;
-                line-height: 1.6;
-                color: #333;
-                max-width: 800px;
-                margin: 0 auto;
-                padding: 40px 20px;
-                background: #fefefe;
-            }
-
-            .card {
-                background: #fff;
-                padding: 30px;
-                border-radius: 8px;
-                border: 1px solid #eee;
-            }
-
-            h1 {
-                font-size: 1.8rem;
-                color: #000;
-                border-bottom: 2px solid #007AFF;
-                padding-bottom: 10px;
-            }
-
-            h2 {
-                font-size: 1.1rem;
-                color: #444;
-                margin-top: 25px;
-                text-transform: uppercase;
-            }
-
-            p,
-            li {
-                font-size: 0.95rem;
-                color: #555;
-            }
-
-            ul {
-                padding-left: 20px;
-            }
-
-            .footer {
-                margin-top: 40px;
-                text-align: center;
-                font-size: 0.8rem;
-                color: #aaa;
-            }
-        </style>
-    </head>
+</head>
 
 <body>
-    <div class="card">
-        <h1>Terms of Service</h1>
-        <p><strong>Last Updated:</strong> March 06, 2026</p>
+    <div class="page-wrapper">
 
-        <h2>1. Acceptance of Terms</h2>
-        <p>These Terms of Service constitute a legally binding agreement between you and <strong>Güneş DEMİRDİLEK
-                (whatsgoon)</strong>. By downloading or using the app, you agree to these terms.</p>
-
-        <h2>2. WAI & Services</h2>
-        <ul>
-            <li>AI analysis ("WAI") is based on the documents you upload. Users are responsible for verifying data
-                accuracy before saving.</li>
-            <li>We do not guarantee 100% accuracy due to variations in document quality or formats.</li>
-            <li>Service availability depends on third-party providers; whatsgoon is not liable for technical outages.
-            </li>
-        </ul>
-
-        <h2>3. User Responsibilities & Age Limit</h2>
-        <p>You agree to upload only documents that belong to you or for which you have permission. Users must be at
-            least 18 years old. whatsgoon does not access your bank accounts directly.</p>
-
-        <h2>4. Third-Party Links</h2>
-        <p>whatsgoon may redirect you to third-party websites (e.g., Apple, Google, Netflix, Spotify) for subscription
-            management. whatsgoon is not responsible for the content, privacy policies, or practices of these external
-            sites.</p>
-
-        <h2>5. Subscriptions and Payments</h2>
-        <p>Premium features are managed via <strong>RevenueCat</strong> and processed through the Apple App Store or
-            Google Play Store. All billing inquiries must be handled through these platforms.</p>
-
-        <h2>6. Intellectual Property</h2>
-        <p>The whatsgoon name, logo, "WAI" brand, designs, and all software code are the exclusive property of
-            <strong>Güneş DEMİRDİLEK</strong>. You are granted a limited license for personal use only.</p>
-
-        <h2>7. Disclaimer of Warranties (As-Is)</h2>
-        <p>The service is provided on an "AS IS" and "AS AVAILABLE" basis. We do not warrant that the service will be
-            uninterrupted, error-free, or completely secure.</p>
-
-        <h2>8. Limitation of Liability</h2>
-        <p>whatsgoon is a financial tracking tool and <strong>does not constitute professional financial
-                advice.</strong> We are not liable for any financial decisions, losses, or errors resulting from the use
-            of the app.</p>
-
-        <h2>9. Indemnification</h2>
-        <p>The user agrees to indemnify and hold harmless whatsgoon and Güneş DEMİRDİLEK from any claims, damages, or
-            losses arising from the user's breach of these terms or illegal actions while using the app.</p>
-
-        <h2>10. Termination</h2>
-        <p>whatsgoon reserves the right to terminate or suspend your account without notice for violations of these
-            terms, fraudulent activities, or attempts to bypass AI limits.</p>
-
-        <h2>11. Governing Law</h2>
-        <p>Any disputes arising from these terms shall be governed by the laws of the Republic of Türkiye, and Istanbul
-            Courts shall have jurisdiction.</p>
-
-        <h2>12. Contact Us</h2>
-        <p>Questions? Reach out to: <a href="mailto:hey@whatsgoon.app">hey@whatsgoon.app</a></p>
-
-        <div class="footer">
-            &copy; 2026 whatsgoon. All rights reserved.
+        <div class="page-header">
+            <div class="brand">whatsgoon</div>
+            <h1>Terms of Service</h1>
+            <div class="meta">Last Updated: March 06, 2026</div>
         </div>
+
+        <div class="page-content">
+
+            <h2>1. Acceptance and Updates of Terms</h2>
+            <p>
+                These Terms of Service constitute a legally binding agreement between you and
+                <strong>Güneş DEMİRDİLEK</strong> (doing business as whatsgoon) ("we," "us," or "our"). By
+                downloading, registering for, or using the app, you agree to be bound by these terms.
+            </p>
+            <p>
+                whatsgoon reserves the right to modify these Terms of Service at any time. Updated versions will be
+                effective immediately upon posting on the app or website. Your continued use of the Services following
+                such changes constitutes your acceptance of the revised terms.
+            </p>
+
+            <h2>2. WAI &amp; AI Service Essentials</h2>
+            <p>whatsgoon provides an AI-powered expense tracking tool ("WAI"). By using this service, you acknowledge
+                the following technical limitations:</p>
+            <ul>
+                <li><strong>Data Source:</strong> AI analysis is based solely on the documents (receipts, invoices, or
+                    bank statements) you upload.</li>
+                <li><strong>Verification Responsibility:</strong> Data extracted by WAI does not constitute final
+                    financial records. It is the user's sole responsibility to verify the accuracy of AI-generated data
+                    before saving it to their records.</li>
+                <li><strong>Accuracy Disclaimer:</strong> Due to variables such as document quality, lighting, or font
+                    styles, we do not guarantee 100% accuracy in data extraction.</li>
+                <li><strong>Service Continuity:</strong> Availability of WAI depends on third-party cloud and AI
+                    providers (e.g., Google Cloud). whatsgoon is not liable for technical outages or service
+                    degradations caused by these providers.</li>
+            </ul>
+
+            <h2>3. User Responsibilities &amp; Age Limit</h2>
+            <ul>
+                <li><strong>Age Requirement:</strong> You must be at least 18 years old (or the age of majority in your
+                    jurisdiction) to use this service.</li>
+                <li><strong>Document Authority:</strong> You agree to upload only documents that belong to you or for
+                    which you have explicit legal permission to process.</li>
+                <li><strong>Access Model:</strong> whatsgoon does not require or request direct access to your bank
+                    accounts; all data is provided via manual user uploads.</li>
+            </ul>
+
+            <h2>4. Third-Party Links &amp; Services</h2>
+            <p>
+                whatsgoon may redirect you to third-party websites (e.g., Apple, Google, Netflix, Spotify) for
+                subscription management or external services. whatsgoon is not responsible for the content, privacy
+                policies, or practices of these external sites.
+            </p>
+
+            <h2>5. Subscriptions, Payments, and Refunds</h2>
+            <ul>
+                <li><strong>Management:</strong> Premium features are managed via RevenueCat and processed through the
+                    Apple App Store or Google Play Store.</li>
+                <li><strong>Refund Policy:</strong> whatsgoon does not collect payments directly and does not process
+                    refunds. All billing and refund inquiries must be handled through the respective platform (Apple or
+                    Google) and are subject to their specific refund policies.</li>
+            </ul>
+
+            <h2>6. Intellectual Property</h2>
+            <p>
+                The whatsgoon name, logo, "WAI" brand, designs, user interface, and all software code are the
+                exclusive property of <strong>Güneş DEMİRDİLEK</strong>. You are granted a limited,
+                non-transferable, and non-exclusive license for personal, non-commercial use only. Unauthorized
+                copying, distribution, or reverse engineering is strictly prohibited.
+            </p>
+
+            <h2>7. Disclaimer of Warranties</h2>
+            <p>
+                The service is provided on an "AS IS" and "AS AVAILABLE" basis. We make no warranties, expressed or
+                implied, that the service will be uninterrupted, error-free, timely, or completely secure.
+            </p>
+
+            <h2>8. Limitation of Liability</h2>
+            <p>
+                <strong>Not Financial Advice:</strong> whatsgoon is a financial tracking and data organization tool
+                only. No content or AI output within the app constitutes professional financial, accounting, or tax
+                advice. whatsgoon is not liable for any financial decisions, losses, damages, or data errors resulting
+                from the use of the app or reliance on AI-generated data.
+            </p>
+
+            <h2>9. Fair Use &amp; Prohibited Actions</h2>
+            <p>
+                whatsgoon reserves the right to restrict or terminate access for users who exceed normal usage limits,
+                employ automated systems (bots) to access the service, intentionally exhaust AI resources, or attempt
+                to bypass system security.
+            </p>
+
+            <h2>10. Indemnification</h2>
+            <p>
+                The user agrees to indemnify and hold harmless whatsgoon and Güneş DEMİRDİLEK from any claims,
+                damages, losses, or expenses (including legal fees) arising from the user's breach of these terms or
+                illegal actions while using the service.
+            </p>
+
+            <h2>11. Termination</h2>
+            <p>
+                whatsgoon reserves the right to suspend or terminate your account without prior notice for fraudulent
+                activities, violations of these terms, or any behavior that poses a risk to the service or other users.
+            </p>
+
+            <h2>12. Governing Law and Jurisdiction</h2>
+            <p>
+                Any disputes arising from these terms shall be governed by the laws of the Republic of Türkiye, and
+                the Istanbul (Anadolu) Courts and Execution Offices shall have exclusive jurisdiction.
+            </p>
+
+            <h2>13. Contact Us</h2>
+            <p>For any questions regarding these terms, please contact us at:</p>
+            <p>
+                <strong>Email:</strong> <a href="mailto:hey@whatsgoon.app">hey@whatsgoon.app</a><br>
+                <strong>Web:</strong> <a href="https://whatsgoon.app" target="_blank">https://whatsgoon.app</a>
+            </p>
+
+        </div>
+
+        <div class="page-footer">
+            &copy; 2026 whatsgoon &mdash; Güneş DEMİRDİLEK &middot;
+            <a href="mailto:hey@whatsgoon.app">hey@whatsgoon.app</a>
+        </div>
+
     </div>
 </body>
 
