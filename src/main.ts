@@ -77,11 +77,12 @@ function updateLanguage(lang: string) {
 
   // Swap feature images based on language
   const imageMap: Record<string, string> = {
-    'feat_statement_analysis_1772765202681.png': 'forecast_montly',
-    'feat_receipt_scan_1772765221602.png': 'WAI.png',
-    'feat_subscription_detective_1772765234700.png': 'tr_debt.png',
-    'feat_lightning_entry_1772765248506.png': 'tr_lightning.png',
-    'feat_free_tier_1772765263637.png': 'tr_login.png',
+    'feat_statement_analysis_1772765202681.png': 'akilli_tahmin.png',
+    'feat_receipt_scan_1772765221602.png': 'wai_ekstre.png',
+    'feat_subscription_detective_1772765234700.png': 'abonelik_hatirlatici.png',
+    'feat_lightning_entry_1772765248506.png': 'yildirim.png',
+    'feat_free_tier_1772765263637.png': 'aylik_ozet.png',
+    'feat_debt_assets_1772765279808.png': 'borc_takip.png', // Bunu eklemeyi unutma!
   };
 
   document.querySelectorAll('.trio-image img, .feature-image-small img').forEach(el => {

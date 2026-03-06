@@ -65,7 +65,7 @@ export const translations = {
         featStatementTitle: "Akıllı Ekstre Analizi",
         featStatementDesc: "Banka ekstrenizi yükleyin; AI harcamaları kategorize etsin ve seçtiğiniz tarih aralığına özel raporlar sunsun.",
         featReceiptTitle: "Yapay Zeka ile Fiş Tarama",
-        featReceiptDesc: "Eski usül OCR’ı unutun. AI, fişindeki tarih ve kategoriyi saniyeler içinde anlar, harcamayı otomatik ekler.",
+        featReceiptDesc: "Eski usül yöntemleri unutun. WAI, fişindeki tarih ve kategoriyi saniyeler içinde anlar, harcamayı otomatik ekler.",
         featSubscriptionTitle: "Abonelik Dedektifi",
         featSubscriptionDesc: "Netflix veya Spotify yenilenmeden 3 gün önce haber verelim. Sürpriz ödemelere son!",
 
