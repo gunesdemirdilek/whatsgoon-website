@@ -75,6 +75,29 @@ function updateLanguage(lang: string) {
     kvkkLink.style.display = lang === 'tr' ? 'inline' : 'none';
   }
 
+  // Swap feature images based on language
+  const imageMap: Record<string, string> = {
+    'feat_statement_analysis_1772765202681.png': 'tr_home_dashboard.png',
+    'feat_receipt_scan_1772765221602.png': 'tr_home_detail.png',
+    'feat_subscription_detective_1772765234700.png': 'tr_debt.png',
+    'feat_lightning_entry_1772765248506.png': 'tr_welcome.png',
+    'feat_free_tier_1772765263637.png': 'tr_login.png',
+  };
+
+  document.querySelectorAll('.trio-image img, .feature-image-small img').forEach(el => {
+    const img = el as HTMLImageElement;
+    // Store original EN src once
+    if (!img.dataset.enSrc) {
+      img.dataset.enSrc = img.src;
+    }
+    const filename = img.dataset.enSrc.split('/').pop() || '';
+    if (lang === 'tr' && imageMap[filename]) {
+      img.src = `/assets/features/tr/${imageMap[filename]}`;
+    } else {
+      img.src = img.dataset.enSrc;
+    }
+  });
+
   // Re-run Lucide to ensure icons in translated strings are rendered (if any)
   // @ts-ignore
   if (window.lucide) {
