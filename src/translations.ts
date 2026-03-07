@@ -55,7 +55,7 @@ export const translations = {
         webVersion: "Web Versiyonu",
         downloadNow: "Hemen İndir",
         heroTitle: "Paranı Zahmetsizce,<br />Yönet.",
-        heroSubtitle: "En kapsamlı finans yöneticisi ile harcamalarınızı takip edin, altın borçlarınızı yönetin ve finansal sağlığınızı koruyun.",
+        heroSubtitle: "WAI ile harcamalarınızı takip edin, borçlarınızı yönetin ve finansal sağlığınızı koruyun.",
         getOnPlayStore: "Play Store'dan İndir",
         openWebVersion: "Web Versiyonunu Aç",
         featuresTitle: "Kontrolü elinizde tutmanız için gereken her şey.",
@@ -63,22 +63,22 @@ export const translations = {
 
         // Priority Trio
         featStatementTitle: "Akıllı Ekstre Analizi",
-        featStatementDesc: "Banka ekstrenizi yükleyin; AI harcamaları kategorize etsin ve seçtiğiniz tarih aralığına özel raporlar sunsun.",
-        featReceiptTitle: "Yapay Zeka ile Fiş Tarama",
-        featReceiptDesc: "Eski usül yöntemleri unutun. WAI, fişindeki tarih ve kategoriyi saniyeler içinde anlar, harcamayı otomatik ekler.",
+        featStatementDesc: "Banka ekstrenizi yükleyin; WAI harcamaları kategorize etsin ve seçtiğiniz tarih aralığına özel raporlar sunsun.",
+        featReceiptTitle: "WAI ile Fiş Tarama",
+        featReceiptDesc: "Eski yöntemleri unutun. WAI, fişindeki tarih ve kategoriyi saniyeler içinde anlar, harcamayı otomatik ekler.",
         featSubscriptionTitle: "Abonelik Dedektifi",
-        featSubscriptionDesc: "Netflix veya Spotify yenilenmeden 3 gün önce haber verelim. Sürpriz ödemelere son!",
+        featSubscriptionDesc: "Netflix veya Spotify gibi abonelikleriz yenilenmeden 3 gün önce haber verelim. Sürpriz ödemelere son verin!",
 
         // Grid Features
         featLightningTitle: "Yıldırım Hızıyla Kayıt",
         featLightningDesc: "Vaktiniz mi dar? Tek tıkla, saniyeler içinde harcama ekleyin.",
         featFreeTitle: "Cömert Başlangıç",
-        featFreeDesc: "Ücretsiz sürümle ayda 2 ekstre, 300 harcama kaydı veya fiş tarama hakkı cebinizde.",
+        featFreeDesc: "Ücretsiz sürümle ayda 2 ekstre, 120 harcama kaydı ve 20 fiş tarama hakkı cebinizde.",
         featDebtTitle: "Varlık ve Borç Takibi",
         featDebtDesc: "Nakit, altın ve borçlarınızı tek yerden yönetin, ödeme günleri için akıllı uyarılar alın.",
         featForecastingTitle: "Geleceği Öngören Tahminleme",
-        featForecastingDesc: "Son 3 aylık verinizle bu ay ne harcayacağınızı tahmin edin, kategorileri geçen ayla anlık kıyaslayın.",
-        featProTitle: "Pro ile Sınırları Kaldırın",
+        featForecastingDesc: "Bu ay ne harcayacağınızı öngörün, kategorileri geçen ayla anlık kıyaslayın.",
+        featProTitle: "WAI+ ile Sınırları Kaldırın",
         featProDesc: "Sınırsız harcama, daha derin yapay zeka analizleri ve akıllı tasarruf önerileriyle bütçenize hükmedin.",
 
         needHelp: "Yardıma mı ihtiyacınız var?",
