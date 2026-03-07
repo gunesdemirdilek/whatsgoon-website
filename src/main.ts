@@ -77,19 +77,31 @@ function updateLanguage(lang: string) {
 
   // Swap feature images based on language
   const imageMap: Record<string, string> = {
-    'feat_statement_analysis_1772765202681.png': 'akilli_tahmin.png',
-    'feat_receipt_scan_1772765221602.png': 'wai_ekstre.png',
-    'feat_subscription_detective_1772765234700.png': 'abonelik_hatirlatici.png',
-    'feat_lightning_entry_1772765248506.png': 'yildirim.png',
-    'feat_free_tier_1772765263637.png': 'aylik_ozet.png',
-    'feat_debt_assets_1772765279808.png': 'borc_takip.png', // Bunu eklemeyi unutma!
+    'wai_statement_en.png': 'wai_statement_tr.png',
+    'scan_receipt_en.png': 'scan_receipt_tr.png',
+    'subs_tracker_en.png': 'subs_tracker_tr.png',
+    'lightning_1': 'lightning_1',
+    'lightning_2': 'lightning_2',
+    'lightning_3': 'lightning_3',
+    'free_tier_1.png': 'free_tier_1.png',
+    'free_tier_2.png': 'free_tier_2.png',
+    'free_tier_3.png': 'free_tier_3.png',
+    'debt_1.png': 'debt_1.png',
+    'debt_2.png': 'debt_2.png',
+    'debt_3.png': 'debt_3.png',
+    'forecast_1.png': 'forecast_1.png',
+    'forecast_2.png': 'forecast_2.png',
+    'forecast_3.png': 'forecast_3.png',
+    'wai_1.png': 'wai_1.png',
+    'wai_2.png': 'wai_2.png',
+    'wai_3.png': 'wai_3.png',
   };
 
-  document.querySelectorAll('.trio-image img, .feature-image-small img').forEach(el => {
+  document.querySelectorAll('.hero-trio img, .card-fan img').forEach(el => {
     const img = el as HTMLImageElement;
     // Store original EN src once
     if (!img.dataset.enSrc) {
-      img.dataset.enSrc = img.src;
+      img.dataset.enSrc = img.getAttribute('src') || '';
     }
     const filename = img.dataset.enSrc.split('/').pop() || '';
     if (lang === 'tr' && imageMap[filename]) {

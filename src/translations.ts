@@ -1,13 +1,13 @@
 export const translations = {
     en: {
         title: "whatsgoon - Master Your Money, Effortlessly",
-        description: "Manage your personal finances, track debts in gold, and monitor recurring expenses with whatsgoon Mobile.",
+        description: "Master your finances with WAI. Track expenses, grow your assets, and get smart insights for a healthier financial future.",
         features: "Features",
         support: "Support",
         webVersion: "Web Version",
         downloadNow: "Download Now",
         heroTitle: "Master Your Money,<br />Effortlessly.",
-        heroSubtitle: "Track expenses, manage debts in gold, and keep your financial health in check with the most comprehensive finance manager.",
+        heroSubtitle: "Master your finances with WAI. Track expenses and get smart insights for a healthier financial future.",
         getOnPlayStore: "Get it on Play Store",
         openWebVersion: "Open Web Version",
         featuresTitle: "Everything you need to stay on top.",
@@ -15,9 +15,9 @@ export const translations = {
 
         // Priority Trio
         featStatementTitle: "Smart Statement Analysis",
-        featStatementDesc: "Upload your bank statement; let AI categorize your spending and generate reports for any specific date range.",
+        featStatementDesc: "Upload your bank statement; let WAI categorize your spending and generate reports for any specific date range.",
         featReceiptTitle: "AI-Powered Receipt Scanning",
-        featReceiptDesc: "Forget old-school OCR. Our AI identifies dates and categories in seconds, adding expenses automatically.",
+        featReceiptDesc: "Forget old-school ways. WAI identifies dates and categories in seconds, adding expenses automatically.",
         featSubscriptionTitle: "Subscription Detective",
         featSubscriptionDesc: "Get notified 3 days before your Netflix or Spotify renews. No more surprise charges.",
 
@@ -25,7 +25,7 @@ export const translations = {
         featLightningTitle: "Lightning Fast Entry",
         featLightningDesc: "Short on time? Add expenses with a single tap in under a second.",
         featFreeTitle: "Generous Free Tier",
-        featFreeDesc: "Get 2 monthly statement scans and 300 expense logs or receipt scans—all for free.",
+        featFreeDesc: "Ads-free experience. Plus 20 WAI receipt scans per month. Completely free!",
         featDebtTitle: "Debt & Asset Tracking",
         featDebtDesc: "Manage cash, gold, and debts in one place with smart alerts for upcoming payments.",
         featForecastingTitle: "Smart Forecasting",
@@ -67,19 +67,19 @@ export const translations = {
         featReceiptTitle: "WAI ile Fiş Tarama",
         featReceiptDesc: "Eski yöntemleri unutun. WAI, fişindeki tarih ve kategoriyi saniyeler içinde anlar, harcamayı otomatik ekler.",
         featSubscriptionTitle: "Abonelik Dedektifi",
-        featSubscriptionDesc: "Netflix veya Spotify gibi abonelikleriz yenilenmeden 3 gün önce haber verelim. Sürpriz ödemelere son verin!",
+        featSubscriptionDesc: "Netflix veya Spotify gibi abonelikleriniz yenilenmeden 3 gün önce haber verelim. Sürpriz ödemelere son verin!",
 
         // Grid Features
         featLightningTitle: "Yıldırım Hızıyla Kayıt",
         featLightningDesc: "Vaktiniz mi dar? Tek tıkla, saniyeler içinde harcama ekleyin.",
         featFreeTitle: "Cömert Başlangıç",
-        featFreeDesc: "Ücretsiz sürümle ayda 2 ekstre, 120 harcama kaydı ve 20 fiş tarama hakkı cebinizde.",
+        featFreeDesc: "Ücretsiz sürümle reklamsız deneyim! WAI ile 20 fiş tarama hakkı cebinizde.",
         featDebtTitle: "Varlık ve Borç Takibi",
         featDebtDesc: "Nakit, altın ve borçlarınızı tek yerden yönetin, ödeme günleri için akıllı uyarılar alın.",
         featForecastingTitle: "Geleceği Öngören Tahminleme",
         featForecastingDesc: "Bu ay ne harcayacağınızı öngörün, kategorileri geçen ayla anlık kıyaslayın.",
         featProTitle: "WAI+ ile Sınırları Kaldırın",
-        featProDesc: "Sınırsız harcama, daha derin yapay zeka analizleri ve akıllı tasarruf önerileriyle bütçenize hükmedin.",
+        featProDesc: "Ekstrenizi taratın, sınırsız harcama ekleyin ve akıllı öneriler ile bütçenize hükmedin.",
 
         needHelp: "Yardıma mı ihtiyacınız var?",
         supportDesc: "Destek ekibimiz her zaman yanınızda. Her türlü soru veya geri bildiriminiz için bize ulaşın.",
