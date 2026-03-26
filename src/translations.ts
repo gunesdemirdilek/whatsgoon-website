@@ -73,7 +73,7 @@ export const translations = {
         featLightningTitle: "Yıldırım Hızıyla Kayıt",
         featLightningDesc: "Vaktiniz mi dar? Tek tıkla, saniyeler içinde harcama ekleyin.",
         featFreeTitle: "Cömert Başlangıç",
-        featFreeDesc: "Ücretsiz sürümle reklamsız deneyim! WAI ile 20 fiş tarama hakkı cebinizde.",
+        featFreeDesc: "Ücretsiz sürümle reklamsız deneyim! WAI özellikleri cebinizde.",
         featDebtTitle: "Varlık ve Borç Takibi",
         featDebtDesc: "Nakit, altın ve borçlarınızı tek yerden yönetin, ödeme günleri için akıllı uyarılar alın.",
         featForecastingTitle: "Geleceği Öngören Tahminleme",
